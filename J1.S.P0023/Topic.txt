@@ -1,9 +1,9 @@
 
 LAB211 Assignment	
-Type:  Long Assignment
-Code:  J1.L.P0023
-LOC:  175
-Slot(s):  5
+Type:   Long Assignment
+Code:   J1.L.P0023
+LOC:    175
+Slot:   5
 
 Title 
 Create a Java console program to manage a Fruit Shop (Product and Shopping).
