@@ -31,13 +31,13 @@ View orders
 
 Customer: Marry Carie
 Product | Quantity | Price | Amount
-1. Apple     3	       1$    	3$
-2. Mango     2         2$     4$
+1. Apple     3	       1$      3$
+2. Mango     2         2$      4$
 Total: 7$
 
 Customer: John Smith
 Product     |   Quantity  |  Price  |  Amount
-1. JackFruit      3           3$	      9$
+1. JackFruit      3           3$        9$
 2. Mango          2           2$        4$
 Total: 13$
 
@@ -47,17 +47,17 @@ Total: 13$
 
 List of Fruit:
 | ++ Item ++ | ++ Fruit Name ++ | ++ Origin ++ | ++ Price ++ |  	
-      1 	       	 Coconut	        Vietnam	         2$
-      2 		       Orange		        US		           3$
-      3 		       Apple		        Thailand	       4$
-      4 	         Grape		        France	         6$
+      1 	  Coconut	      Vietnam	      2$
+      2 	  Orange	      US              3$
+      3 	  Apple		      Thailand	      4$
+      4 	  Grape		      France	      6$
 	
 To order, customer selects Item, for example: when customer selects item 1, the program shows:
 You selected: Coconut
 Please input quantity: 
 After customer inputs quantity of fruit, the program shows message: Do you want to order now (Y/N). If customer selects N, the program returns to List of Fruit to continue ordering. If select Y, the program displays:
  Product | Quantity | Price | Amount
- Coconut      3	        2$	    6$
+ Coconut      3	        2$       6$
 Total: 6$
 Input your name: 
 Customer inputs his/her name to finish ordering. The program returns main screen.
