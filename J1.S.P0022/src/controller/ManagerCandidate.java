@@ -19,28 +19,28 @@ public class ManagerCandidate {
     }
 
     public String displayCandidateList(String experien, String fresher, String intern) {
-        String result = experien + "\n";
-
+        StringBuilder result = new StringBuilder();
+        result.append(experien + "\n");
         for (Candidate candidate : candidateList) {
             if (candidate instanceof Experience) {
-                result += candidate.getFirstName() + " " + candidate.getLastName() + "\n";
+                result.append(candidate.getFirstName() + " " + candidate.getLastName() + "\n");
             }
         }
 
-        result += fresher + "\n";
+        result.append(fresher + "\n");
         for (Candidate candidate : candidateList) {
             if (candidate instanceof Fresher) {
-                result += candidate.getFirstName() + " " + candidate.getLastName() + "\n";
+                result.append(candidate.getFirstName() + " " + candidate.getLastName() + "\n");
             }
         }
 
-        result += intern + "\n";
+        result.append(intern + "\n");
         for (Candidate candidate : candidateList) {
             if (candidate instanceof Internship) {
-                result += candidate.getFirstName() + " " + candidate.getLastName() + "\n";
+                result.append(candidate.getFirstName() + " " + candidate.getLastName() + "\n");
             }
         }
-        return result;
+        return result.toString();
     }
 
     public boolean checkIdExist(String id) {
@@ -53,14 +53,14 @@ public class ManagerCandidate {
     }
 
     public String displayCandidate(String name, int type) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (Candidate candidate : candidateList) {
             if (candidate.getCandidateType() == type
                     && (candidate.getFirstName().toUpperCase().contains(name.toUpperCase())
                     || (candidate.getLastName()).toUpperCase().contains(name.toUpperCase()))) {
-                result += candidate.toString() + "\n";
+                result.append(candidate.toString() + "\n");
             }
         }
-        return result;
+        return result.toString();
     }
 }
