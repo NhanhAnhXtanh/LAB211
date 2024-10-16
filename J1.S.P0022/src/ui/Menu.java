@@ -3,7 +3,7 @@ package ui;
 import java.util.ArrayList;
 
 public class Menu {
-
+    
     private String menuTitle;
     private final ArrayList<String> listOptionMenu = new ArrayList<>();
 
@@ -29,12 +29,11 @@ public class Menu {
 
     @Override
     public String toString() {
-        String result = "";
-        result += "==========" + menuTitle + "===========\n";
+        StringBuilder result = new StringBuilder();
+        result.append("==========" + menuTitle + "===========\n");
         for (String string : listOptionMenu) {
-            result += string + "\n";
+            result.append(string + "\n");
         }
-        return result;
+        return result.toString();
     }
-
 }
